@@ -14,7 +14,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/scrips/note.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/roseCollider.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -71,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582547287735</updated>
       <workItem from="1582547292039" duration="212000" />
-      <workItem from="1582548503672" duration="91000" />
+      <workItem from="1582548503672" duration="329000" />
     </task>
     <servers />
   </component>
