@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Button
+  - Bucket
+  - Tree
+  - Environment
   layers:
   - Default
   - TransparentFX
@@ -14,7 +19,7 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
+  - Shootable
   - 
   - 
   - 
