@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class HeartsTree : MonoBehaviour
 {
+    
+    // bug - if you try to acxtive a tree before timer starts, then activate the timer, you cant asctive a tree
 
     public bool active = false;
     public GameObject InteractionImage;
@@ -47,11 +49,21 @@ public class HeartsTree : MonoBehaviour
     public void activate()
     {
         Debug.Log("active");
-        
+
+        if (parentScript.paintLeft > 0)
+        {
+
             transform.GetChild(0).GetComponent<Renderer>().material.color = Color.red;
             Debug.Log("transform");
             active = true;
+            parentScript.paintLeft = parentScript.paintLeft - 1;
             parentScript.checkStatus(); //call from here?
+        }
+        else
+        {
+            
+        }
+        
     }
 
     
