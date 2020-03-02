@@ -13,12 +13,25 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/treeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Buttons/scripts/Rose.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/HeartsTree.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/note.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Cameras/Scripts/AbstractTargetFollower.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/bucket.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/scrips/note.cs" />
+        <option value="$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tree.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/bucket.cs" />
+        <option value="$PROJECT_DIR$/Assets/Buttons/scripts/Rose.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/HeartsTree.cs" />
+        <option value="$PROJECT_DIR$/Assets/scrips/treeManager.cs" />
       </list>
     </option>
   </component>
@@ -71,6 +84,9 @@
       <updated>1582547287735</updated>
       <workItem from="1582547292039" duration="212000" />
       <workItem from="1582548503672" duration="329000" />
+      <workItem from="1582999390020" duration="335000" />
+      <workItem from="1582999917697" duration="1494000" />
+      <workItem from="1583070928502" duration="9100000" />
     </task>
     <servers />
   </component>

@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class Rose : MonoBehaviour
 {
-    public float timer;
+    private static float timerDefault = 60;
+    public float timer = timerDefault;
     public int roses = 0;
     public int lives = 3;
     public Text timerText;
@@ -17,23 +18,32 @@ public class Rose : MonoBehaviour
     public GameObject gameOverScreen;
     public GameObject winScreen;
     public GameObject pauseScreen;
+    public treeManager Trees;
 
+    public bool timeStarted = false;
     // Start is called before the first frame update
     void Start()
     {
-
     }
 
     void gameOver()
     {
         gameOverScreen.gameObject.SetActive(true);
         Time.timeScale = 0;
+        timeStarted = false;
     }
 
-    void win()
+    public void win()
     {
         winScreen.gameObject.SetActive(true);
         Time.timeScale = 0;
+    }
+
+    public void add(int childrenActive, int numOfChildren)
+    {
+        // roses += 1;
+     //   roseText.text = roses.ToString() + "/" + numOfChildren;
+     roseText.text = childrenActive + "/" + numOfChildren;
     }
 
     void pauseGame()
@@ -52,15 +62,25 @@ public class Rose : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    public void startTimer()
+    {
+        timer = timerDefault;
+        timeStarted = true;
+    }
+    
     // Update is called once per frame
     void Update()
     {
-        //Timer that counts down. Game over when it reaches 0
-        timer -= Time.deltaTime;
-        timerText.text = Mathf.Round(timer).ToString();
-        if(timer < 0)
+
+        if (timeStarted)
         {
-          gameOver();
+            //Timer that counts down. Game over when it reaches 0
+            timer -= Time.deltaTime;
+            timerText.text = Mathf.Round(timer).ToString();
+            if (timer < 0)
+            {
+                gameOver();
+            }
         }
 
 
@@ -98,6 +118,12 @@ public class Rose : MonoBehaviour
         {
             win();
         }
+        
+        // chloes - uneccessary processing if called every frame?
+//        if (Trees.GetComponent<treeManager>().checkStatus())
+//        {
+//            win();
+//        }
 
         //pause menu
         if (Input.GetKeyDown("escape"))
