@@ -8,6 +8,7 @@ public class treeManager : MonoBehaviour
     private int childCount =0;
     private int childrenActive = 0;
     private bool complete;
+    public int paintLeft = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +64,7 @@ public class treeManager : MonoBehaviour
         }
 
     }
+
     
     
 }

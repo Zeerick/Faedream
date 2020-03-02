@@ -21,6 +21,10 @@
           <e p="note.cs" t="Include" />
           <e p="treeManager.cs" t="Include" />
         </e>
+        <e p="scripts" t="Include">
+          <e p="PlayerController.cs" t="Include" />
+          <e p="Tree.cs" t="Include" />
+        </e>
         <e p="Standard Assets" t="Include">
           <e p="Cameras" t="Include">
             <e p="CameraGuidelines.txt" t="Include" />
