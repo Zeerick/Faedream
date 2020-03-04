@@ -13,15 +13,20 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/treeManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Buttons/scripts/Rose.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/HeartsTree.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/note.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Cameras/Scripts/AbstractTargetFollower.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Character (Qingwei)/Scripts/Player/PlayerAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/scrips/bucket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/note.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Cameras/Scripts/AbstractTargetFollower.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Character (Qingwei)/Scripts/Player/CameraMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/treeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Character (Qingwei)/Scripts/Player/PlayerMovementControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Character (Qingwei)/Scripts/Player/Sorcery/ParabolaRay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/scrips/HeartsTree.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Character (Qingwei)/Scripts/Player/PlayerAttackX.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Buttons/scripts/Rose.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -33,6 +38,12 @@
         <option value="$PROJECT_DIR$/Assets/scrips/treeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/HeartsTree.cs" />
         <option value="$PROJECT_DIR$/Assets/scrips/bucket.cs" />
+        <option value="$PROJECT_DIR$/Assets/ParabolaRayOriginFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Character (Qingwei)/Scripts/Player/PlayerAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Character (Qingwei)/Scripts/Player/Sorcery/ParabolaRay.cs" />
+        <option value="$PROJECT_DIR$/Assets/ParabolaRayInitial.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Character (Qingwei)/Scripts/Player/PlayerAttack2.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Character (Qingwei)/Scripts/Player/PlayerAttackX.cs" />
       </list>
     </option>
   </component>
@@ -89,6 +100,8 @@
       <workItem from="1582999917697" duration="1494000" />
       <workItem from="1583070928502" duration="9241000" />
       <workItem from="1583147072951" duration="3301000" />
+      <workItem from="1583194985667" duration="4861000" />
+      <workItem from="1583331743434" duration="3201000" />
     </task>
     <servers />
   </component>

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
  
@@ -11,27 +12,38 @@ public class ParabolaRay : MonoBehaviour
     private float k;//k为抛物线上抛出点的切线 y=kx+d 的斜率，我们把抛出点设为原点，所以：y = kx，k = 2ax +b
     private float b;// 我们把抛出点设为坐标原点，所以由k = 2ax + b,b = k;
     public LineRenderer aimLazer; //抛物线的LineRenderer组件
-    public int density = 100;//抛物线的精度
-    public float space = 1;//每个节点间的间隔
+    public int density = 50;//抛物线的精度
+    public float space = 2;//每个节点间的间隔
                        // y = a*space*space+b*space
     
     public Vector3 posCompensation = new Vector3(0, 0, 0);    // A variable I added so that the initial of the curve can be set where the sorceries are casted.
     public Vector3 orientation = new Vector3(0, 0, 0);    // 3D direction of the parabola curve.
     
-    private GameObject sphere;
-    List<GameObject> points = new List<GameObject>();
+    private GameObject vertex;
+    List<GameObject> vertices = new List<GameObject>();
     Vector3 prevPoint;
     void Start()
     {
-        sphere= new GameObject();
+        vertex= new GameObject();
         for (int i = 0; i < density; i++)
         {
-            points.Add(Instantiate(sphere));
+            vertices.Add(Instantiate(vertex));
         }
         aimLazer.SetVertexCount(density+1);
         prevPoint = transform.position/* + posCompensation*/;    // Modified with posCompensation
     }
- 
+
+    private void OnEnable()
+    {
+        vertex= new GameObject();
+        for (int i = 0; i < density; i++)
+        {
+            vertices.Add(Instantiate(vertex));
+        }
+        aimLazer.SetVertexCount(density+1);
+        prevPoint = transform.position/* + posCompensation*/;    // Modified with posCompensation
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -44,7 +56,7 @@ public class ParabolaRay : MonoBehaviour
         for (int i = 0; i < density; i++)
         {
             Vector3 p = GetPosition(i * space);
-            points[i].transform.position = p;
+            vertices[i].transform.position = p;
             cast = Cast(p);
             if (cast)
             {
@@ -68,8 +80,9 @@ public class ParabolaRay : MonoBehaviour
         f.y = 0;
         f = f.normalized;
  
-        Vector3 pos = transform.position + f * z/* + posCompensation*/;//水平方向坐标    // Modified with posCompensation
-        pos.y = transform.position.y + y + posCompensation.y;//加上垂直方向坐标    // Modified with posCompensation
+        Vector3 pos = transform.position + f * z;//水平方向坐标
+        pos.y = transform.position.y + y/* + posCompensation.y*/;//加上垂直方向坐标    // Modified with posCompensation
+        
         return pos;
     }
      
@@ -85,7 +98,7 @@ public class ParabolaRay : MonoBehaviour
         if(Physics.Raycast(prevPoint, d.normalized, out hit, d.magnitude))
         {
             SetLine(hit.point);
-            prevPoint = transform.position/* + posCompensation*/;    // Modified with posCompensation
+            prevPoint = transform.position;    // Modified with posCompensation
 
             GameObject hitObject = hit.collider.gameObject;
             if (hitObject.CompareTag("Enemy") && !hitObject.GetComponent<EnemyHealth>().IsDead)
@@ -113,7 +126,7 @@ public class ParabolaRay : MonoBehaviour
     /// <param name="endPos"></param>
     void SetLine(Vector3 endPos)
     {
-        Vector3 s = transform.position + posCompensation;    // Modified with posCompensation
+        Vector3 s = transform.position/* + posCompensation*/;    // Modified with posCompensation
         endPos.y = 0;
         s.y = 0;
  
@@ -124,7 +137,7 @@ public class ParabolaRay : MonoBehaviour
             aimLazer.SetPosition(i, GetPosition(i * j));
         }
         aimLazer.SetPosition(density, endPos);
-        sphere.transform.position = endPos;
+        vertex.transform.position = endPos;
     }
 
     /// <summary>
@@ -132,7 +145,7 @@ public class ParabolaRay : MonoBehaviour
     /// </summary>
     public void ClearVertices()
     {
-        foreach (GameObject vertex in points)
+        foreach (GameObject vertex in vertices)
         {
             UnityEngine.Object.Destroy(vertex);
         }

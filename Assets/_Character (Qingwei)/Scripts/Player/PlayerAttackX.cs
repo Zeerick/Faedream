@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAttack : MonoBehaviour
+public class PlayerAttackX : MonoBehaviour
 {
     // public Vector3 castPosition = new Vector3(0, 0, 0);    // Might be useful for gameplay options, bit not applicable yet.
 
@@ -43,11 +42,12 @@ public class PlayerAttack : MonoBehaviour
     private Sorcery castingSorcery = Sorcery.none;
     
     private LayerMask shootableMask;
-    private LineRenderer aimLazer;
+    private LineRenderer fireball_aimLazer;
     
     private Ray aimRay;
     private RaycastHit aimLazerHit;
 
+    private LineRenderer snowball_aimLazer;
     private ParabolaRay parabola;
     
     // public ParticleSystem.Particle explosion;
@@ -56,8 +56,9 @@ public class PlayerAttack : MonoBehaviour
     {
         camera = GameObject.FindGameObjectWithTag("MainCamera");    // Automatically assign the variable to the main camera. This requires the main camera to have tag "MainCamera".
         shootableMask = LayerMask.GetMask("Shootable");
-        aimLazer = GetComponent<LineRenderer>();
-        parabola = GetComponent<ParabolaRay>();
+        fireball_aimLazer = GetComponent<LineRenderer>();
+        snowball_aimLazer = GetComponentsInChildren<LineRenderer>()[1];
+        parabola = GetComponentInChildren<ParabolaRay>();
     }
 
     private void Update()
@@ -66,7 +67,7 @@ public class PlayerAttack : MonoBehaviour
         if (castingSorcery == Sorcery.fireBall)
         {
             AimFireball();
-            aimLazer.enabled = true;
+            fireball_aimLazer.enabled = true;
         }
         if (Input.GetKeyDown(KeyCode.Alpha1) && fireBall_cooldownTimer <= 0f)
         {
@@ -78,7 +79,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 castingSorcery = Sorcery.fireBall;
                 AimFireball();
-                aimLazer.enabled = true;
+                fireball_aimLazer.enabled = true;
             }
         }
         
@@ -87,7 +88,7 @@ public class PlayerAttack : MonoBehaviour
         {
             AimSnowball();
             parabola.enabled = true;
-            aimLazer.enabled = true;
+            snowball_aimLazer.enabled = true;
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) && snowBall_cooldownTimer <= 0f)
         {
@@ -100,7 +101,7 @@ public class PlayerAttack : MonoBehaviour
                 castingSorcery = Sorcery.snowBall;
                 AimSnowball();
                 parabola.enabled = true;
-                aimLazer.enabled = true;
+                snowball_aimLazer.enabled = true;
             }
         }
 
@@ -163,25 +164,25 @@ public class PlayerAttack : MonoBehaviour
         aimRay.direction = camera.transform.forward;
 
         // aimLazer.SetVertexCount(2);
-        aimLazer.SetPosition(0, castPosition);
+        fireball_aimLazer.SetPosition(0, castPosition);
 
         if (Physics.Raycast(aimRay, out aimLazerHit, fireBall_range, shootableMask))
         {
-            aimLazer.SetPosition(1, aimLazerHit.point);
+            fireball_aimLazer.SetPosition(1, aimLazerHit.point);
             GameObject hitObject = aimLazerHit.collider.gameObject;
             if (hitObject.CompareTag("Enemy") && !hitObject.GetComponent<EnemyHealth>().IsDead)
             {
-                aimLazer.material.SetColor("_EmissionColor", Color.red);
+                fireball_aimLazer.material.SetColor("_EmissionColor", Color.red);
             }
             else
             {
-                aimLazer.material.SetColor("_EmissionColor", Color.cyan);
+                fireball_aimLazer.material.SetColor("_EmissionColor", Color.cyan);
             }
         }
         else
         {
-            aimLazer.SetPosition(1, castPosition + aimRay.direction * fireBall_range);
-            aimLazer.material.SetColor("_EmissionColor", Color.cyan);
+            fireball_aimLazer.SetPosition(1, castPosition + aimRay.direction * fireBall_range);
+            fireball_aimLazer.material.SetColor("_EmissionColor", Color.cyan);
         }
     }
 
@@ -200,7 +201,8 @@ public class PlayerAttack : MonoBehaviour
     private void clear()
     {
         castingSorcery = Sorcery.none;
-        aimLazer.enabled = false;
+        fireball_aimLazer.enabled = false;
+        snowball_aimLazer.enabled = false;
         // parabola.ClearVertices();
         parabola.enabled = false;
     }

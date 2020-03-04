@@ -104,6 +104,59 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &173168034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8749233510502868512}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e250459089987bc46924a6b654303247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  a: -0.0085
+  aimLazer: {fileID: 7926300075584981507}
+  density: 50
+  space: 2
+  posCompensation: {x: 0, y: 0.5, z: 0.4}
+  orientation: {x: 0, y: 0, z: 0}
+--- !u!114 &7924546259018014212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8749233510502868512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aec10c1ac9c55e147b0f823ff798c0c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireBall: {fileID: 784854705806212837, guid: 44a9a73e49d85d7449407f1a9356147b, type: 3}
+  fireBall_damage: 20
+  fireBall_forwardSpeed: 1
+  fireBall_range: 20
+  fireBall_expansion: 1.05
+  fireBall_cooldown: 3
+  snowBall: {fileID: 1913916568846713617, guid: 34909346d3cf35b47b4f5f259982a4f8,
+    type: 3}
+  snowBall_damage: 10
+  snowBal_forwardSpeed: 0.05
+  snowBall_cooldown: 3
+  bouncingBall: {fileID: 8457184282186333773, guid: 35c3bff91b4d7e6459e33a321b4afcb8,
+    type: 3}
+  bouncingball_damage: 10
+  bouncingBall_isRealistic: 0
+  bouncingBall_forwardSpeed: 0.05
+  bouncingBall_bouncingForce: 25
+  bouncingBall_bouncingTime: 3
+  bouncingBall_forwardForce: 0.05
+  bouncingBall_bouncingAttenuation: 0.5
+  bouncingBall_cooldown: 3
+  explosion: {fileID: 3678300689383483550, guid: 16563995fbc27bc4f9ac4fd17606e08d,
+    type: 3}
 --- !u!114 &7924546259018014213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,41 +175,6 @@ MonoBehaviour:
   m_animator: {fileID: 8664398361345153008}
   m_rigidBody: {fileID: 8767905155510226704}
   m_controlMode: 1
---- !u!114 &7924546259018014212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8749233510502868512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aec10c1ac9c55e147b0f823ff798c0c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fireBall: {fileID: 784854705806212837, guid: 44a9a73e49d85d7449407f1a9356147b, type: 3}
-  fireBall_damage: 20
-  fireBall_forwardSpeed: 1
-  fireBall_range: 30
-  fireBall_expansion: 1.05
-  fireBall_cooldown: 0
-  snowBall: {fileID: 1913916568846713617, guid: 34909346d3cf35b47b4f5f259982a4f8,
-    type: 3}
-  snowBall_damage: 10
-  snowBal_forwardSpeed: 0.05
-  snowBall_cooldown: 3
-  bouncingBall: {fileID: 8457184282186333773, guid: 35c3bff91b4d7e6459e33a321b4afcb8,
-    type: 3}
-  bouncingball_damage: 10
-  bouncingBall_isRealistic: 0
-  bouncingBall_forwardSpeed: 0.05
-  bouncingBall_bouncingForce: 25
-  bouncingBall_bouncingTime: 3
-  bouncingBall_forwardForce: 0.05
-  bouncingBall_bouncingAttenuation: 0.5
-  bouncingBall_cooldown: 3
-  explosion: {fileID: 3678300689383483550, guid: 16563995fbc27bc4f9ac4fd17606e08d,
-    type: 3}
 --- !u!114 &7924546259018014330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,24 +189,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   timeBetweenDamages: 1
---- !u!114 &173168034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8749233510502868512}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e250459089987bc46924a6b654303247, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  a: -0.0085
-  aimLazer: {fileID: 7926300075584981507}
-  density: 100
-  space: 1
-  posCompensation: {x: 0, y: 0.5, z: 0.4}
-  orientation: {x: 0, y: 0, z: 0}
 --- !u!1001 &6082200309818430207
 PrefabInstance:
   m_ObjectHideFlags: 0
