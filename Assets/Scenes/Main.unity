@@ -237,7 +237,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 823
+    m_Bits: 2871
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -412,7 +412,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1335
+    m_Bits: 1024
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: c49ec0598c86f3422bbd7c9f6154711e, type: 2}
   m_TargetDisplay: 0
@@ -447,7 +447,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1159263332}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 086fabba616a551b8a50a49b1458a940, type: 3}
+  m_Script: {fileID: 11500000, guid: 6236fa85776980c419e8bdc6cb9cef84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 534669902}
