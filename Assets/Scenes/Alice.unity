@@ -1378,7 +1378,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.1
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 2890990153817109918, guid: 2967026fb78274065984a6b6aece8ebc,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1389,8 +1388,6 @@ PrefabInstance:
       propertyPath: m_SmoothTurnTime
       value: 0
       objectReference: {fileID: 0}
-=======
->>>>>>> 47f7282720c597dc81778eebe9ef7891d4d9c04c
     - target: {fileID: 2890990152587030927, guid: 2967026fb78274065984a6b6aece8ebc,
         type: 3}
       propertyPath: m_LocalPosition.z
