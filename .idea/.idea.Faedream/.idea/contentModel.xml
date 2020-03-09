@@ -49,6 +49,11 @@
             </e>
           </e>
         </e>
+        <e p="Assets" t="Include">
+          <e p="scripts" t="Include">
+            <e p="PlayerController.cs" t="Include" />
+          </e>
+        </e>
         <e p="Buttons" t="Include">
           <e p="scripts" t="Include">
             <e p="ExitGame.cs" t="Include" />
@@ -58,15 +63,16 @@
             <e p="StartGame.cs" t="Include" />
           </e>
         </e>
-        <e p="scrips" t="Include">
+        <e p="oldscripts" t="Include">
           <e p="bucket.cs" t="Include" />
-          <e p="HeartsTree.cs" t="Include" />
-          <e p="note.cs" t="Include" />
-          <e p="treeManager.cs" t="Include" />
         </e>
         <e p="scripts" t="Include">
+          <e p="HeartsTree.cs" t="Include" />
+          <e p="mirrorCam.cs" t="Include" />
+          <e p="note.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="Tree.cs" t="Include" />
+          <e p="treeManager.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
           <e p="Cameras" t="Include">
@@ -120,6 +126,7 @@
           </e>
         </e>
         <e p="test2.cs" t="Include" />
+        <e p="ToSnowWhitescene.cs" t="Include" />
       </e>
       <e p="Faedream.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
