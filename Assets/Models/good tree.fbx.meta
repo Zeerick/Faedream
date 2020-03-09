@@ -4,17 +4,13 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: leaves
     400000: //RootNode
-    400002: leaves
     2100000: Material.001
-    2100002: Material
+    2100002: Material.002
     2300000: //RootNode
-    2300002: leaves
     3300000: //RootNode
-    3300002: leaves
     4300000: tree
-    4300002: leaves
+    6400000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -48,14 +44,14 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
