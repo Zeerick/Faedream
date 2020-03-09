@@ -13,16 +13,14 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/treeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Buttons/scripts/Rose.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/HeartsTree.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/note.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeartsTree.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Character (Qingwei)/Scripts/Player/PlayerAttack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Cameras/Scripts/AbstractTargetFollower.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/scrips/bucket.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ToSnowWhitescene.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -40,6 +38,7 @@
         <option value="$PROJECT_DIR$/Assets/ParabolaRayInitial.cs" />
         <option value="$PROJECT_DIR$/Assets/_Character (Qingwei)/Scripts/Player/PlayerAttack2.cs" />
         <option value="$PROJECT_DIR$/Assets/_Character (Qingwei)/Scripts/Player/PlayerAttackX.cs" />
+        <option value="$PROJECT_DIR$/Assets/ToSnowWhitescene.cs" />
       </list>
     </option>
   </component>
@@ -99,6 +98,7 @@
       <workItem from="1583194985667" duration="4861000" />
       <workItem from="1583331743434" duration="3201000" />
       <workItem from="1583756089310" duration="138000" />
+      <workItem from="1583757331506" duration="1069000" />
     </task>
     <servers />
   </component>
