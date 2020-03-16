@@ -6,8 +6,7 @@ using UnityEngine;
 public class ToSnowWhitescene : MonoBehaviour
 {
     public bool active = false;
-    public GameObject InteractionImage;
-    
+
 
     // Update is called once per frame
     void Update()
@@ -17,7 +16,6 @@ public class ToSnowWhitescene : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        InteractionImage.SetActive(true);
 
     }
 
@@ -35,7 +33,6 @@ public class ToSnowWhitescene : MonoBehaviour
     
     private void OnTriggerExit(Collider other)
     {
-        InteractionImage.SetActive((false));
     }
 
     public void activate()

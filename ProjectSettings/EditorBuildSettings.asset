@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Bedroom.unity
+    guid: c65ea5f2abaa4254a8e5a5eca88a47c7
+  - enabled: 1
+    path: Assets/Scenes/Alice.unity
+    guid: ce54519bcc5ee72449fe82dc0c88c13a
+  - enabled: 1
+    path: Assets/Scenes/Snow White.unity
+    guid: a7509cc24f00a7143ba95e51ca0e45c9
   m_configObjects: {}
