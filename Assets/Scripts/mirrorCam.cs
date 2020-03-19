@@ -10,6 +10,7 @@ public class mirrorCam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Reflect(mainCamera.transform.position, mirror.transform.eulerAngles);
+        //transform.position = mainCamera.transform.position;
+        transform.rotation = mainCamera.transform.rotation;
     }
 }
