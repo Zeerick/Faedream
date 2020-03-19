@@ -605,6 +605,10 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Build: 1
+    Collab: 1
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
   luminIcon:
     m_Name: 
@@ -625,10 +629,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 577d4f82-b61b-467e-b2eb-b8c8b423a980
+  cloudProjectId: ebebea52-aeb2-4795-90af-4a7b4aa4b85d
   framebufferDepthMemorylessMode: 0
-  projectName: Faedream (3)
-  organizationId: zeerick
+  projectName: Faedream
+  organizationId: chloeleeyuen
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
